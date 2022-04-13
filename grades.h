@@ -19,8 +19,8 @@ class GradeType{
         GradeType(std::string name, int percentage, id_type courseID):
             name(name), percentage(percentage), courseID(courseID),
             id(count++) {};
-        std::string getName();
-        int getPercentage();
+        std::string getName() const;
+        int getPercentage() const;
         id_type getID() const;
         friend std::ostream& operator<<(std::ostream& os, const GradeType& gr);
 };

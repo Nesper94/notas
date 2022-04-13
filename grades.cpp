@@ -16,11 +16,11 @@ void Grades::setScore(id_type course_id, id_type student_id,
 
 // Grade_type
 
-std::string GradeType::getName(){
+std::string GradeType::getName() const {
     return name;
 }
 
-int GradeType::getPercentage(){
+int GradeType::getPercentage() const {
     return percentage;
 }
 

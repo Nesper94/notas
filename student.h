@@ -30,13 +30,13 @@ class Student{
                    id(id), name(name),
                    surname(surname) {++count;};
 
-        int getID();
-        std::string getName();
+        int getID() const;
+        std::string getName() const;
         void setName(std::string);
-        std::string getFullName();
+        std::string getFullName() const;
 
         void setScore(Course&, const GradeType&, double score);
-        double getScore(Course&, GradeType&);
+        double getScore(Course&, GradeType&) const;
 };
 
 #endif // NOTAS_STUDENT_H

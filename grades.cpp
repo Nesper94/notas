@@ -5,8 +5,8 @@
 id_type GradeType::count = 1;
 
 double Grades::getScore(id_type course_id, id_type student_id,
-                        id_type grade_type_id){
-    return grades[course_id][student_id][grade_type_id];
+                        id_type grade_type_id) const {
+    return grades.at(course_id).at(student_id).at(grade_type_id);
 }
 
 void Grades::setScore(id_type course_id, id_type student_id,

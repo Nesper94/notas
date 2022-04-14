@@ -34,7 +34,7 @@ class Grades{
     public:
         //Grades();
         double getScore(id_type course_id, id_type student_id,
-                        id_type grade_type_id);
+                        id_type grade_type_id) const;
         void setScore(id_type course_id, id_type student_id,
                         id_type grade_type_id, double score);
 };

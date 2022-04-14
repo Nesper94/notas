@@ -6,6 +6,8 @@ enable_testing()
 
 add_executable(notas main.cpp)
 
+add_subdirectory(test)
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
